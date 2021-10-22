@@ -3,6 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
 # В коде реализован выбор языка для Chrome, так как это является достаточным для задания (см. п.5)
+# Реализован выбор только для двух языков, согласно условиям задачи
 
 def pytest_addoption(parser):
     parser.addoption('--language', action='store', default=None,
